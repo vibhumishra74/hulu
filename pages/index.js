@@ -1,3 +1,4 @@
+import axios from "axios";
 import Head from "next/head";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
@@ -23,7 +24,11 @@ export default function Home({results}) {
 
 export async function getServerSideProps(context){
   const genre = context.query.genre //geting query params
-  const requestres = await fetch(`https://api.themoviedb.org/3${request[genre]?.url || request.fetchTrending.url}`).then(res=>res.json())
+  const requestres = await axios
+                                .get(`https://api.themoviedb.org/3${request[genre]?.url || request.fetchTrending.url}`)
+                                .then(res=>res.data)
+                                .catch(e=>console.log('error in fetching data'))
+  // const requestres = await axios.get(`https://api.themoviedb.org/3${request[genre]?.url || request.fetchTrending.url}`).then(res=>res.json())
 
   return{
     props:{
