@@ -30,7 +30,10 @@ function Header() {
         src="https://links.papareact.com/ua6"
         width={200}
         height={100}
+<<<<<<< HEAD
         alt='logo'
+=======
+>>>>>>> 82e46c11347a117223c5f73eeb3ad4f5655fcaf4
       />
     </header>
   );
