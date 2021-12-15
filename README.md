@@ -1,7 +1,9 @@
 ## DEMO
 Open [https://hulu-git-main-vibhumishra74.vercel.app/] with your browser to see the result.
-Open [https://hulu-vibhumishra74.vercel.app/] with your browser to see the result.
-Open [https://hulu-blue.vercel.app/] with your browser to see the result.
+
+## Open [https://hulu-vibhumishra74.vercel.app/] with your browser to see the result.
+
+## Open [https://hulu-blue.vercel.app/] with your browser to see the result.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
