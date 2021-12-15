@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Header from "../components/Header";
-<<<<<<< HEAD
 import Nav from "../components/Nav";
 import Result from "../components/Result";
 import request from "../utils/request";
 
 export default function Home({results}) {
   // console.log('get server side rendering',results)
-=======
-
-export default function Home() {
->>>>>>> 82e46c11347a117223c5f73eeb3ad4f5655fcaf4
   return (
     <div className={{ background: "red" }}>
       <Head>
@@ -20,7 +15,6 @@ export default function Home() {
       </Head>
       {/* header */}
       <Header />
-<<<<<<< HEAD
       <Nav />
       <Result request={results}/>
     </div>
@@ -37,8 +31,3 @@ export async function getServerSideProps(context){
     }
   }
 }
-=======
-    </div>
-  );
-}
->>>>>>> 82e46c11347a117223c5f73eeb3ad4f5655fcaf4
