@@ -3,7 +3,7 @@ import React from 'react'
 function Result({request}) {
     return (
         <div>
-            <p>hello result</p>
+            <p>hello result from result</p>
         </div>
     )
 }
