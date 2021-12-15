@@ -6,7 +6,7 @@ import Result from "../components/Result";
 import request from "../utils/request";
 
 export default function Home({results}) {
-  console.log('get server side rendering',results)
+  // console.log('get server side rendering',results)
   return (
     <div className={{ background: "red" }}>
       <Head>
