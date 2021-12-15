@@ -14,7 +14,7 @@ import { ThumbUpIcon } from '@heroicons/react/outline'
             src={`${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`}
             height={1080}
             width={1920}
-            alt='banner'
+            alt='banner pic'
             />
             <div className='p-2'>
                 <p className='truncate max-w-md'>
