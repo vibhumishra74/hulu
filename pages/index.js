@@ -6,7 +6,7 @@ import Result from "../components/Result";
 import request from "../utils/request";
 
 export default function Home({results}) {
-  // console.log('get server side rendering',results)
+  console.log('get server side rendering',results)
   return (
     <div className={{ background: "red" }}>
       <Head>
@@ -27,7 +27,7 @@ export async function getServerSideProps(context){
   const requestres = await axios
                                 .get(`https://api.themoviedb.org/3${request[genre]?.url || request.fetchTrending.url}`)
                                 .then(res=>res.data)
-                                .catch(e=>console.log('error in fetching data'))
+                                .catch(e=>console.log('error in fetching data',e))
   // const requestres = await axios.get(`https://api.themoviedb.org/3${request[genre]?.url || request.fetchTrending.url}`).then(res=>res.json())
 
   return{
